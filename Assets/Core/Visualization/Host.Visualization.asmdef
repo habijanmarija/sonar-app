@@ -1,0 +1,16 @@
+{
+    "name": "Host.Visualization",
+    "rootNamespace": "Host.Visualization",
+    "references": [
+        "Host.Patients"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

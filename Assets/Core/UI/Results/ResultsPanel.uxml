@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Core/UI/Results/ResultsPanel.uss" />
+  <ui:VisualElement name="root" class="panel results-panel">
+    <ui:Label text="Session results" class="title" />
+
+    <ui:VisualElement class="results-layout">
+      <ui:VisualElement class="results-list">
+        <ui:Label text="Sessions" class="section-title" />
+        <ui:ScrollView name="sessions-scroll">
+          <ui:VisualElement name="sessions-list" />
+        </ui:ScrollView>
+        <ui:Button name="refresh" text="Refresh" class="btn-secondary" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="results-detail">
+        <ui:Label text="Summary" class="section-title" />
+        <ui:Label name="detail-empty" text="Select a session to view its summary." class="hint" />
+        <ui:VisualElement name="detail" class="detail-content">
+          <ui:Label name="d-session" />
+          <ui:Label name="d-participant" />
+          <ui:Label name="d-mode" />
+          <ui:Label name="d-vendor" />
+          <ui:Label name="d-duration" />
+          <ui:Label name="d-tre" />
+          <ui:Label name="d-errors" />
+          <ui:Label name="d-smoothness" />
+          <ui:Label name="d-path" />
+          <ui:Label name="d-completion" />
+          <ui:Label text="Step outcomes" class="subsection-title" />
+          <ui:VisualElement name="steps-list" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Back to menu" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

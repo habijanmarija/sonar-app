@@ -1,0 +1,16 @@
+{
+    "name": "Host.Tools.DicomWidget",
+    "rootNamespace": "Host.Tools.DicomWidget",
+    "references": [
+        "Host.Patients"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

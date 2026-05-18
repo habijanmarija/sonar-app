@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Core/UI/Calibration/CalibrationPanel.uss" />
+  <ui:VisualElement name="root" class="panel">
+    <ui:Label text="Calibration" class="title" />
+    <ui:Label name="instruction" text="Touch each of the 5 landmarks on the phantom with the drill tip, then press Sample." class="hint" />
+
+    <ui:VisualElement class="status-grid">
+      <ui:Label name="sample-count" text="Sampled: 0 / 5" class="status-item" />
+      <ui:Label name="tre" text="TRE: —" class="status-item" />
+      <ui:Label name="gate" text="Gate: 2.0 mm" class="status-item" />
+    </ui:VisualElement>
+
+    <ui:VisualElement name="landmarks" class="landmarks" />
+
+    <ui:Label name="validation" class="validation" />
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="retry" text="Reset samples" class="btn-secondary" />
+      <ui:Button name="sample" text="Sample next landmark" class="btn-primary" />
+      <ui:Button name="accept" text="Accept calibration" class="btn-primary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

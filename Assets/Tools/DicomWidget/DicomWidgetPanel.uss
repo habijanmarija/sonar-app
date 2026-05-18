@@ -1,0 +1,61 @@
+/* Slice viewer — right column, top row. */
+
+.dicom-panel {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 320px;
+    padding: 14px;
+}
+
+.dicom-panel .title {
+    font-size: 15px;
+}
+
+.dicom-content {
+    margin-top: 6px;
+    display: none;
+}
+
+.dicom-content.visible {
+    display: flex;
+}
+
+.series-picker {
+    margin-bottom: 8px;
+}
+
+.slice-frame {
+    width: 100%;
+    height: 140px;
+    background-color: #0A0A0C;
+    border-width: 1px;
+    border-color: #2A2A2E;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slice-image {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.slice-controls {
+    flex-direction: column;
+}
+
+.slice-label {
+    -unity-font-style: bold;
+    color: #C8C8C8;
+    margin-bottom: 6px;
+}
+
+.slice-slider {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    min-height: 28px;
+}

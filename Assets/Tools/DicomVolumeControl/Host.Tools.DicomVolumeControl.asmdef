@@ -1,0 +1,17 @@
+{
+    "name": "Host.Tools.DicomVolumeControl",
+    "rootNamespace": "Host.Tools.DicomVolumeControl",
+    "references": [
+        "Host.Patients",
+        "Host.Visualization"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

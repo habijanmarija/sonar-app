@@ -1,0 +1,50 @@
+/* Briefing panel — left column, top row. Capped height + clipped overflow so
+   long History fields don't push other left-column panels around. */
+
+.briefing-panel {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 300px;
+    max-height: 280px;
+    padding: 14px;
+    overflow: hidden;
+}
+
+.briefing-panel .title {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.briefing-content {
+    margin-top: 6px;
+    display: none;
+    overflow: hidden;
+    flex-shrink: 1;
+}
+
+.briefing-content.visible {
+    display: flex;
+}
+
+.briefing-row {
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: flex-start;
+}
+
+.briefing-key {
+    width: 90px;
+    color: #BFBFBF;
+    -unity-font-style: bold;
+}
+
+.briefing-value {
+    flex-grow: 1;
+    color: #ECECEC;
+    white-space: normal;
+}
+
+.briefing-multiline {
+    white-space: normal;
+}

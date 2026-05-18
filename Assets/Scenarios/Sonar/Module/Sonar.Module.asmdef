@@ -1,0 +1,22 @@
+{
+    "name": "Sonar.Module",
+    "rootNamespace": "Sonar.Module",
+    "references": [
+        "Host.Scenarios",
+        "Host.App",
+        "Host.Participant",
+        "Host.Telemetry",
+        "Host.Tools.Notifications",
+        "Sonar.Guidance",
+        "Sonar.Scenario"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

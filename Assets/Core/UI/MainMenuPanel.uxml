@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Core/UI/MainMenuPanel.uss" />
+  <ui:VisualElement name="root" class="panel">
+    <ui:Label text="AR Training Platform" class="title" />
+    <ui:Label text="Pick a scenario to begin a training session." class="hint" />
+
+    <ui:ScrollView name="scenarios-scroll" class="scenarios-scroll">
+      <ui:VisualElement name="scenarios-list" />
+    </ui:ScrollView>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="results" text="Results" class="btn-secondary" />
+      <ui:Button name="settings" text="Settings" class="btn-secondary" />
+      <ui:Button name="quit" text="Quit" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+{
+    "name": "Sonar.Visualization",
+    "rootNamespace": "Sonar.Visualization",
+    "references": [
+        "Sonar.Scenario",
+        "Sonar.Guidance",
+        "Sonar.Tracking",
+        "Host.Telemetry",
+        "Host.Platform"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

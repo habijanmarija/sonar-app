@@ -1,0 +1,72 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/Segmentation/SegmentationPanel.uss" />
+  <ui:VisualElement name="root" class="panel segmentation-panel">
+    <ui:Label text="Segmentation" class="title" />
+    <ui:Label name="empty-message" text="No volume loaded." class="hint" />
+
+    <ui:VisualElement name="content" class="segmentation-content">
+      <ui:VisualElement class="segments-section">
+        <ui:Label text="Segments" class="subtitle" />
+        <ui:VisualElement class="control-row">
+          <ui:Label text="All segs" class="control-label" />
+          <ui:Slider name="global-opacity" low-value="0" high-value="1" value="0.7" class="control-slider" />
+          <ui:Label name="global-opacity-value" text="0.70" class="control-value" />
+        </ui:VisualElement>
+        <ui:ScrollView name="segments-scroll" class="segments-list" mode="Vertical">
+          <ui:VisualElement name="segments-list" />
+        </ui:ScrollView>
+        <ui:VisualElement class="segment-add-row">
+          <ui:TextField name="new-segment-name" value="Region" class="new-segment-name" />
+          <ui:Button name="segment-add" text="+ Add" class="btn-secondary" />
+        </ui:VisualElement>
+        <ui:Label name="active-segment-label" text="Active: —" class="hint active-segment-label" />
+      </ui:VisualElement>
+
+      <ui:Toggle name="enabled" label="Enable highlight" class="enable-toggle" />
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Low" class="control-label" />
+        <ui:Slider name="low" low-value="0" high-value="1" value="0.40" class="control-slider" />
+        <ui:Label name="low-value" text="0.40" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="High" class="control-label" />
+        <ui:Slider name="high" low-value="0" high-value="1" value="0.60" class="control-slider" />
+        <ui:Label name="high-value" text="0.60" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Opacity" class="control-label" />
+        <ui:Slider name="active-opacity" low-value="0" high-value="1" value="1" class="control-slider" />
+        <ui:Label name="active-opacity-value" text="1.00" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="color-row">
+        <ui:Label text="Color" class="control-label" />
+        <ui:Button name="color-red" class="color-swatch red" />
+        <ui:Button name="color-green" class="color-swatch green" />
+        <ui:Button name="color-yellow" class="color-swatch yellow" />
+        <ui:Button name="color-blue" class="color-swatch blue" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="brush-section">
+        <ui:Toggle name="brush-enabled" label="Brush mode (drag over cube)" class="enable-toggle" />
+        <ui:Toggle name="brush-erase" label="Erase mode" class="enable-toggle" />
+        <ui:VisualElement class="control-row">
+          <ui:Label text="Brush" class="control-label" />
+          <ui:SliderInt name="brush-radius" low-value="1" high-value="20" value="4" class="control-slider" />
+          <ui:Label name="brush-radius-value" text="4" class="control-value" />
+        </ui:VisualElement>
+        <ui:VisualElement class="brush-actions">
+          <ui:Button name="brush-clear" text="Clear mask" class="btn-secondary" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

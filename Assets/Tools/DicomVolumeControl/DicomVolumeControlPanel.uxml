@@ -1,0 +1,48 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/DicomVolumeControl/DicomVolumeControlPanel.uss" />
+  <ui:VisualElement name="root" class="panel volume-panel">
+    <ui:Label text="Volume" class="title" />
+    <ui:Label name="empty-message" text="No volume loaded." class="hint" />
+
+    <ui:VisualElement name="content" class="volume-content">
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Series" class="control-label" />
+        <ui:DropdownField name="series-picker" class="control-slider" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Toggle name="show-volume" value="true" label="Show volume" />
+        <ui:Toggle name="show-segmentation" value="true" label="Show segments" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Threshold low" class="control-label" />
+        <ui:Slider name="threshold-low" low-value="0" high-value="1" value="0.05" class="control-slider" />
+        <ui:Label name="threshold-low-value" text="0.05" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Threshold high" class="control-label" />
+        <ui:Slider name="threshold-high" low-value="0" high-value="1" value="1.0" class="control-slider" />
+        <ui:Label name="threshold-high-value" text="1.00" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="control-row">
+        <ui:Label text="Density" class="control-label" />
+        <ui:Slider name="density" low-value="0" high-value="8" value="1.5" class="control-slider" />
+        <ui:Label name="density-value" text="1.50" class="control-value" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="preset-row">
+        <ui:Button name="preset-soft" text="Soft" class="preset-btn" />
+        <ui:Button name="preset-bone" text="Bone" class="preset-btn" />
+        <ui:Button name="preset-lung" text="Lung" class="preset-btn" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

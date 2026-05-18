@@ -1,0 +1,21 @@
+{
+    "name": "Host.UI",
+    "rootNamespace": "Host.UI",
+    "references": [
+        "Host.App",
+        "Host.Participant",
+        "Host.Scenarios",
+        "Host.Settings",
+        "Host.Registration",
+        "Host.Tools.Notifications"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

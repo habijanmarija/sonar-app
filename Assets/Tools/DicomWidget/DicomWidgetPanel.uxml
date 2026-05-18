@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/DicomWidget/DicomWidgetPanel.uss" />
+  <ui:VisualElement name="root" class="panel dicom-panel">
+    <ui:Label text="Slice viewer" class="title" />
+    <ui:Label name="empty-message" text="No series loaded." class="hint" />
+
+    <ui:VisualElement name="content" class="dicom-content">
+      <ui:DropdownField name="series-picker" label="Series" class="series-picker" />
+
+      <ui:VisualElement name="slice-frame" class="slice-frame">
+        <ui:VisualElement name="slice-image" class="slice-image" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="slice-controls">
+        <ui:Label name="slice-label" text="Slice 0 / 0" class="slice-label" />
+        <ui:SliderInt name="slice-slider" low-value="0" high-value="0" value="0" class="slice-slider" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

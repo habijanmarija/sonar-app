@@ -1,0 +1,19 @@
+{
+    "name": "Sonar.Guidance",
+    "rootNamespace": "Sonar.Guidance",
+    "references": [
+        "Sonar.Scenario",
+        "Sonar.Tracking",
+        "Host.Telemetry",
+        "Host.Platform"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

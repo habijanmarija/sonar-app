@@ -1,0 +1,41 @@
+/* Opacity panel — left column, middle row. */
+
+.opacity-panel {
+    position: absolute;
+    top: 310px;
+    left: 16px;
+    width: 300px;
+    padding: 14px;
+}
+
+.opacity-panel .title {
+    font-size: 15px;
+}
+
+.sliders-list {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.organ-row {
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom-width: 1px;
+    border-bottom-color: #2A2A2E;
+}
+
+.organ-row-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.organ-row-name {
+    -unity-font-style: bold;
+    color: #E8E8E8;
+}
+
+.organ-row-value {
+    color: #B0B0B0;
+}

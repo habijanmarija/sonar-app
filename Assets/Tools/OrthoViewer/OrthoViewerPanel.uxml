@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/OrthoViewer/OrthoViewerPanel.uss" />
+  <ui:VisualElement name="root" class="panel ortho-panel">
+    <ui:Label text="Orthogonal views" class="title" />
+    <ui:Label name="empty-message" text="No volume loaded." class="hint" />
+    <ui:VisualElement name="content" class="ortho-content">
+      <ui:VisualElement class="ortho-grid">
+        <ui:VisualElement class="ortho-pane">
+          <ui:Label text="Axial (D)" class="ortho-label" />
+          <ui:VisualElement name="axial-view" class="ortho-view" />
+          <ui:VisualElement class="ortho-slider-row">
+            <ui:SliderInt name="axial-slider" low-value="0" high-value="0" value="0" class="ortho-slider" />
+            <ui:Label name="axial-index" text="—" class="ortho-index" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="ortho-pane">
+          <ui:Label text="Sagittal (W)" class="ortho-label" />
+          <ui:VisualElement name="sagittal-view" class="ortho-view" />
+          <ui:VisualElement class="ortho-slider-row">
+            <ui:SliderInt name="sagittal-slider" low-value="0" high-value="0" value="0" class="ortho-slider" />
+            <ui:Label name="sagittal-index" text="—" class="ortho-index" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="ortho-pane">
+          <ui:Label text="Coronal (H)" class="ortho-label" />
+          <ui:VisualElement name="coronal-view" class="ortho-view" />
+          <ui:VisualElement class="ortho-slider-row">
+            <ui:SliderInt name="coronal-slider" low-value="0" high-value="0" value="0" class="ortho-slider" />
+            <ui:Label name="coronal-index" text="—" class="ortho-index" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="actions ortho-controls">
+      <ui:VisualElement class="ortho-knob-row">
+        <ui:Label text="Brightness" class="ortho-knob-label" />
+        <ui:Slider name="brightness" low-value="-0.5" high-value="0.5" value="0" class="ortho-knob-slider" />
+        <ui:Label name="brightness-value" text="0.00" class="ortho-knob-value" />
+      </ui:VisualElement>
+      <ui:VisualElement class="ortho-knob-row">
+        <ui:Label text="Contrast" class="ortho-knob-label" />
+        <ui:Slider name="contrast" low-value="-1.0" high-value="3.0" value="0" class="ortho-knob-slider" />
+        <ui:Label name="contrast-value" text="0.00" class="ortho-knob-value" />
+      </ui:VisualElement>
+      <ui:Toggle name="smooth" label="Smooth filter" class="ortho-knob-toggle" />
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

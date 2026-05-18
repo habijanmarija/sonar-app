@@ -1,0 +1,19 @@
+{
+    "name": "Host.Tools.Screenshot",
+    "rootNamespace": "Host.Tools.Screenshot",
+    "references": [
+        "Host.App",
+        "Host.Participant",
+        "Host.Tools.Notifications",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

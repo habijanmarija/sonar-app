@@ -1,0 +1,40 @@
+.scenarios-scroll {
+    max-height: 480px;
+    margin: 12px 0;
+}
+
+.scenario-card {
+    flex-direction: column;
+    background-color: #1F1F24;
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: #333;
+}
+
+.scenario-card .scenario-name {
+    -unity-font-style: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.scenario-card .scenario-desc {
+    color: #B0B0B0;
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+.scenario-card .scenario-meta {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.scenario-card .scenario-launch {
+    align-self: flex-start;
+}
+
+.scenario-card.stub .scenario-launch {
+    background-color: #444;
+}

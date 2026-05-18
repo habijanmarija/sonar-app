@@ -1,0 +1,112 @@
+/* Orthogonal-views panel — three 2D cuts (axial / sagittal / coronal) shown
+   side-by-side with a slice slider under each one. The mask is composited
+   into the slice texture at extraction time using the segment palette. */
+
+.ortho-panel {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    right: 6px;
+    padding: 12px;
+    /* HostStyles' .panel sets max-width: 720px to keep tool panels readable.
+       The ortho viewer wants the full viewport width so its three 400-px
+       view boxes fit inside the gray background — override that cap here. */
+    max-width: none;
+}
+
+.ortho-content {
+    margin-top: 6px;
+    flex-direction: column;
+}
+
+.ortho-grid {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.ortho-pane {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 8px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+}
+
+
+.ortho-label {
+    color: #DDDDDD;
+    -unity-font-style: bold;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.ortho-view {
+    width: 100%;
+    height: 400px;
+    align-self: stretch;
+    background-color: #000;
+    border-width: 1px;
+    border-color: #444;
+    margin-bottom: 4px;
+    /* Force the slice Texture2D (which has the volume's native aspect, e.g.
+       492×797 or 797×21) to fill the view rect. Without this the default
+       scale-mode can letterbox or tile, leaving the view looking empty. */
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.ortho-slider-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.ortho-slider {
+    flex-grow: 1;
+    margin-right: 4px;
+}
+
+.ortho-index {
+    width: 40px;
+    color: #B0B0B0;
+    -unity-text-align: middle-right;
+    font-size: 10px;
+}
+
+.ortho-controls {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.ortho-knob-row {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.ortho-knob-label {
+    width: 70px;
+    color: #BFBFBF;
+    font-size: 11px;
+}
+
+.ortho-knob-slider {
+    width: 140px;
+    margin-right: 4px;
+}
+
+.ortho-knob-value {
+    width: 44px;
+    color: #B0B0B0;
+    font-size: 10px;
+    -unity-text-align: middle-right;
+}
+
+.ortho-knob-toggle {
+    margin-right: 16px;
+    color: #C8C8C8;
+    font-size: 11px;
+}

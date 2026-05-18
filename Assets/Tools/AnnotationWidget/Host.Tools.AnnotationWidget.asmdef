@@ -1,0 +1,17 @@
+{
+    "name": "Host.Tools.AnnotationWidget",
+    "rootNamespace": "Host.Tools.AnnotationWidget",
+    "references": [
+        "Host.Patients",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

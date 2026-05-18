@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <ui:VisualElement name="root" class="panel">
+    <ui:Label text="Settings" class="title" />
+    <ui:Label text="Persisted to Application.persistentDataPath/settings.json. Restart the app after changing the backend URL." class="hint" />
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Backend WS URL" class="field-label" />
+      <ui:TextField name="backend-url" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Backend REST URL" class="field-label" />
+      <ui:TextField name="rest-url" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Default mode" class="field-label" />
+      <ui:DropdownField name="default-mode" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Participant ID strategy" class="field-label" />
+      <ui:DropdownField name="id-strategy" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Toggle name="auto-open-results" label="Auto-open results after each session" />
+    </ui:VisualElement>
+
+    <ui:Label name="status" class="validation" />
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Back to menu" class="btn-secondary" />
+      <ui:Button name="save" text="Save" class="btn-primary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

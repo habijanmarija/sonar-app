@@ -1,0 +1,8 @@
+/* Intake-specific extensions on top of Shared/HostStyles.uss */
+
+.consent-row {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top-width: 1px;
+    border-top-color: #444;
+}

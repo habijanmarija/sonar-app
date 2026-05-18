@@ -1,0 +1,18 @@
+{
+    "name": "Host.Tools.OrthoViewer",
+    "rootNamespace": "Host.Tools.OrthoViewer",
+    "references": [
+        "Host.Patients",
+        "Host.Visualization",
+        "Host.Tools.Segmentation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

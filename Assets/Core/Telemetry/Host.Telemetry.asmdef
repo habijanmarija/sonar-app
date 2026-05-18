@@ -1,0 +1,16 @@
+{
+    "name": "Host.Telemetry",
+    "rootNamespace": "Host.Telemetry",
+    "references": [
+        "Host.Platform"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

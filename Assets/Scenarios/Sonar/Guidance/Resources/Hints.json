@@ -1,0 +1,26 @@
+{
+  "2:skipped_step":      "Confirm the target vertebra before advancing.",
+  "3:entry_point_error": [
+    "Move the drill tip closer to the planned entry, then hold steady.",
+    "You are still outside the entry zone. Watch the green dot and steady your hand.",
+    "Reset: lift the tip away, locate the entry pit visually, then re-approach slowly."
+  ],
+  "4:trajectory_deviation": [
+    "Reduce angular offset — align the drill axis with the planned trajectory.",
+    "Your drill is tilted. Rotate it about the entry point until the cylinder turns green.",
+    "Slow down and watch the green cylinder. Match its angle before insertion begins."
+  ],
+  "5:trajectory_deviation": [
+    "You are drifting laterally. Return to the green corridor.",
+    "Stop forward motion. Re-centre the tip inside the green band, then resume slowly.",
+    "Lateral drift is repeating — withdraw to entry and re-establish the trajectory."
+  ],
+  "5:excessive_force":   "Reduce force on the drill; let the depth advance smoothly.",
+  "6:excessive_depth":   "Stop advancing — you have passed the planned depth.",
+  "6:insufficient_depth": "Advance further to reach the planned depth.",
+  "7:trajectory_deviation": [
+    "Withdraw along the same axis as you inserted — avoid lateral excursion.",
+    "Slow the withdrawal and keep the tip inside the green corridor."
+  ],
+  "8:skipped_step":      "Confirm placement only after reaching the planned depth in step 6."
+}

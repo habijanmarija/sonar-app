@@ -1,0 +1,67 @@
+{
+  "scenario": "bone_drilling",
+  "config_version": "v1",
+  "phantom_version": "v1",
+  "trajectory": {
+    "id": "L2_R_pedicle",
+    "vertebra": "L2",
+    "side": "right",
+    "entry_m":   [ 0.024,  0.008,  0.000 ],
+    "axis_unit": [ -0.30,  0.10,  0.95 ],
+    "planned_depth_m": 0.035,
+    "min_depth_m":     0.030,
+    "max_depth_m":     0.040
+  },
+  "steps": [
+    { "number": 1, "name": "calibrate",          "hold_seconds": 0.0, "errors": [] },
+    { "number": 2, "name": "identify_level",     "hold_seconds": 0.0, "errors": ["skipped_step"] },
+    { "number": 3, "name": "mark_entry",         "hold_seconds": 0.5, "errors": ["entry_point_error"] },
+    { "number": 4, "name": "establish_trajectory","hold_seconds": 0.0, "errors": ["trajectory_deviation"] },
+    { "number": 5, "name": "insert",             "hold_seconds": 0.0, "errors": ["trajectory_deviation", "excessive_force"] },
+    { "number": 6, "name": "reach_target_depth", "hold_seconds": 0.0, "errors": ["excessive_depth", "insufficient_depth"] },
+    { "number": 7, "name": "withdraw",           "hold_seconds": 0.0, "errors": ["trajectory_deviation"] },
+    { "number": 8, "name": "confirm_end",        "hold_seconds": 0.0, "errors": ["skipped_step"] }
+  ],
+  "thresholds": {
+    "lateral_green_m":      0.0015,
+    "lateral_red_m":        0.003,
+    "angular_green_deg":    5.0,
+    "angular_red_deg":      10.0,
+    "depth_green_m":        0.002,
+    "depth_red_m":          0.005,
+    "registration_gate_m":  0.002,
+    "hysteresis_fraction":  0.2
+  },
+  "mode_thresholds": {
+    "Novice": {
+      "lateral_green_m":     0.0020,
+      "lateral_red_m":       0.0040,
+      "angular_green_deg":   6.0,
+      "angular_red_deg":    12.0,
+      "depth_green_m":       0.003,
+      "depth_red_m":         0.006,
+      "registration_gate_m": 0.002,
+      "hysteresis_fraction": 0.2
+    },
+    "Intermediate": {
+      "lateral_green_m":     0.0015,
+      "lateral_red_m":       0.0030,
+      "angular_green_deg":   5.0,
+      "angular_red_deg":    10.0,
+      "depth_green_m":       0.002,
+      "depth_red_m":         0.005,
+      "registration_gate_m": 0.002,
+      "hysteresis_fraction": 0.2
+    },
+    "Expert": {
+      "lateral_green_m":     0.0010,
+      "lateral_red_m":       0.0020,
+      "angular_green_deg":   3.0,
+      "angular_red_deg":     7.0,
+      "depth_green_m":       0.0015,
+      "depth_red_m":         0.0035,
+      "registration_gate_m": 0.002,
+      "hysteresis_fraction": 0.2
+    }
+  }
+}

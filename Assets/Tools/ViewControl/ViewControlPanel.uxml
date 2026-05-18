@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/ViewControl/ViewControlPanel.uss" />
+  <ui:VisualElement name="root" class="panel view-panel">
+    <ui:Label text="Views" class="title" />
+    <ui:Label name="empty-message" text="No patient loaded." class="hint" />
+    <ui:VisualElement name="views-list" class="views-list" />
+    <ui:VisualElement class="actions">
+      <ui:Button name="reset" text="Reset" class="btn-secondary" />
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

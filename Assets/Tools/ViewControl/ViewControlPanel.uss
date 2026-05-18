@@ -1,0 +1,35 @@
+/* Views — right column, bottom row. */
+
+.view-panel {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 320px;
+    padding: 14px;
+}
+
+.view-panel .title {
+    font-size: 15px;
+}
+
+.views-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.view-button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #1F1F24;
+    color: #E8E8E8;
+    border-width: 1px;
+    border-color: #444;
+    border-radius: 3px;
+}
+
+.view-button:hover {
+    background-color: #2D3D55;
+}

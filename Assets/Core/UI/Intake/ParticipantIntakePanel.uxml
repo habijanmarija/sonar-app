@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Core/UI/Intake/ParticipantIntakePanel.uss" />
+  <ui:VisualElement name="root" class="panel">
+    <ui:Label text="Participant intake" class="title" />
+    <ui:Label text="Complete before the session begins. The pseudonym is auto-suggested; override only if you need to re-test a previous participant." class="hint" />
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Pseudonym" class="field-label" />
+      <ui:TextField name="pseudonym" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Age band" class="field-label" />
+      <ui:DropdownField name="age-band" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Handedness" class="field-label" />
+      <ui:DropdownField name="handedness" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Prior training" class="field-label" />
+      <ui:DropdownField name="prior-training" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Label text="Session mode" class="field-label" />
+      <ui:DropdownField name="mode" class="field-input" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row">
+      <ui:Toggle name="vision-corrected" label="Vision corrected to normal" />
+    </ui:VisualElement>
+    <ui:VisualElement class="row">
+      <ui:Toggle name="vr-susceptible" label="Known severe VR motion sickness (will exclude)" />
+    </ui:VisualElement>
+    <ui:VisualElement class="row">
+      <ui:Toggle name="photosensitive" label="Photosensitive epilepsy (will exclude)" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="row consent-row">
+      <ui:Toggle name="consent" label="I have read the consent form and the participant has given informed consent." />
+    </ui:VisualElement>
+
+    <ui:Label name="validation" class="validation" />
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="cancel" text="Cancel" class="btn-secondary" />
+      <ui:Button name="continue" text="Continue to calibration" class="btn-primary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

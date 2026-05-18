@@ -1,0 +1,57 @@
+.results-panel {
+    max-width: 1100px;
+}
+
+.results-layout {
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.results-list {
+    width: 360px;
+    margin-right: 24px;
+}
+
+.results-detail {
+    flex-grow: 1;
+}
+
+.section-title {
+    -unity-font-style: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.subsection-title {
+    -unity-font-style: bold;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+#sessions-list Button {
+    width: 100%;
+    text-align: left;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    background-color: #232328;
+    color: #D8D8D8;
+    border-width: 1px;
+    border-color: #333;
+    border-radius: 4px;
+}
+
+#sessions-list Button:hover {
+    background-color: #2D3D55;
+}
+
+.detail-content {
+    display: none;
+}
+
+.detail-content.visible {
+    display: flex;
+}
+
+.detail-content Label {
+    margin-bottom: 4px;
+}

@@ -1,0 +1,74 @@
+/* Shared baseline styles for every host UI panel.
+   Add this stylesheet first on every UIDocument's Style Sheets list;
+   panel-specific USS files layer on top. */
+
+.panel {
+    padding: 32px;
+    max-width: 720px;
+    background-color: rgba(28, 28, 32, 0.95);
+    border-radius: 8px;
+    color: #ECECEC;
+}
+
+.title {
+    font-size: 22px;
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.hint {
+    color: #A8A8A8;
+    margin-bottom: 18px;
+    white-space: normal;
+}
+
+.row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.field-label {
+    width: 200px;
+    color: #BFBFBF;
+}
+
+.field-input {
+    flex-grow: 1;
+}
+
+.validation {
+    margin-top: 8px;
+    color: #FF8888;
+    -unity-font-style: italic;
+    min-height: 16px;
+}
+
+.actions {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.btn-primary {
+    padding: 8px 18px;
+    margin-left: 8px;
+    background-color: #2E7DD7;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-primary:disabled {
+    background-color: #444;
+    color: #888;
+}
+
+.btn-secondary {
+    padding: 8px 18px;
+    margin-left: 8px;
+    background-color: transparent;
+    color: #BBBBBB;
+    border-width: 1px;
+    border-color: #555;
+    border-radius: 4px;
+}

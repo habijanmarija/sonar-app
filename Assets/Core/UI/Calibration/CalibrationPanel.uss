@@ -1,0 +1,29 @@
+.status-grid {
+    flex-direction: row;
+    margin: 12px 0;
+}
+
+.status-item {
+    margin-right: 24px;
+    -unity-font-style: bold;
+}
+
+.landmarks {
+    margin: 12px 0;
+}
+
+.landmarks Label {
+    margin-bottom: 4px;
+}
+
+.landmark-pending {
+    color: #888;
+}
+
+.landmark-accepted {
+    color: #6CD56C;
+}
+
+.landmark-over-budget {
+    color: #FF9A4D;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Host.Tools.PatientSelector",
+    "rootNamespace": "Host.Tools.PatientSelector",
+    "references": [
+        "Host.Patients",
+        "Host.Tools.Notifications"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

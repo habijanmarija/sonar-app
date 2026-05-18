@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/PatientSelector/PatientSelectorPanel.uss" />
+  <ui:VisualElement name="root" class="panel">
+    <ui:Label text="Patient selector" class="title" />
+    <ui:Label name="root-path" class="hint" />
+
+    <ui:ScrollView name="patients-scroll" class="patients-scroll">
+      <ui:VisualElement name="patients-list" />
+    </ui:ScrollView>
+
+    <ui:Label name="empty-message" text="No patient cases found. Copy a case folder into the patients directory above." class="empty-message" />
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="refresh" text="Refresh" class="btn-secondary" />
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

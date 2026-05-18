@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/AnnotationWidget/AnnotationWidgetPanel.uss" />
+  <ui:VisualElement name="root" class="panel annotation-panel">
+    <ui:Label text="Annotations" class="title" />
+    <ui:Label name="status" class="hint" text="No patient loaded." />
+
+    <ui:VisualElement class="add-row">
+      <ui:TextField name="new-label" class="add-row-label" />
+      <ui:Button name="add" text="Add at click" class="btn-primary add-row-button" />
+    </ui:VisualElement>
+
+    <ui:ScrollView name="annotations-scroll" class="annotations-scroll">
+      <ui:VisualElement name="annotations-list" />
+    </ui:ScrollView>
+
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

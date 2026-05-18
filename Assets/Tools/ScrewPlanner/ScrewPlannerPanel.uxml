@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Core/UI/Shared/HostStyles.uss" />
+  <Style src="project://database/Assets/Tools/ScrewPlanner/ScrewPlannerPanel.uss" />
+  <ui:VisualElement name="root" class="panel screw-panel">
+    <ui:Label text="Screw planner" class="title" />
+    <ui:Label name="empty-message" text="No volume loaded." class="hint" />
+    <ui:VisualElement name="content" class="screw-content">
+      <ui:Label name="target-label" text="Target: —" class="hint screw-target" />
+      <ui:Label name="status" text="Click 'Place screw' then pick entry + tip in the 3D scene." class="hint screw-status" />
+
+      <ui:VisualElement class="screw-actions">
+        <ui:Button name="place" text="Place screw" class="btn-secondary" />
+        <ui:Button name="clear" text="Clear all" class="btn-secondary" />
+      </ui:VisualElement>
+
+      <ui:Label name="count" text="No screws placed." class="hint screw-count" />
+      <ui:ScrollView name="screws-scroll" class="screws-scroll" mode="Vertical">
+        <ui:VisualElement name="screws-list" />
+      </ui:ScrollView>
+
+      <ui:VisualElement class="screw-readout">
+        <ui:Label text="Last coverage" class="screw-readout-label" />
+        <ui:Label name="coverage" text="—" class="screw-coverage" />
+      </ui:VisualElement>
+      <ui:Label name="gate" text="—" class="screw-gate" />
+      <ui:Label name="trajectory" text="" class="hint screw-trajectory" />
+      <ui:Label name="breach" text="" class="hint screw-breach" />
+      <ui:Label name="canal-grade" text="" class="screw-canal-grade" />
+      <ui:Label name="sonar-metrics" text="" class="screw-sonar-metrics" />
+    </ui:VisualElement>
+    <ui:VisualElement class="actions">
+      <ui:Button name="close" text="Close" class="btn-secondary" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

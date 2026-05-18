@@ -1,0 +1,49 @@
+{
+  "patient_id": "sample_001",
+  "pseudonym": "Sample case (anatomy demo)",
+  "age_band": "—",
+  "sex": "—",
+  "indication": "Synthetic dataset for testing the patient/mesh loader pipeline.",
+  "history": "Not a real patient. Replace with anonymised case for first study.",
+  "captured_utc": "2026-05-15T00:00:00Z",
+  "data_root": "",
+  "dicom_series": [],
+  "meshes": [
+    {
+      "id": "skin",
+      "name": "Skin envelope",
+      "path": "meshes/skin.obj",
+      "format": "obj",
+      "color": "#E0BFA0",
+      "opacity": 0.35
+    },
+    {
+      "id": "skeleton",
+      "name": "Skeleton",
+      "path": "meshes/skeleton.obj",
+      "format": "obj",
+      "color": "#F5F0E8",
+      "opacity": 1.0
+    }
+  ],
+  "views": [
+    {
+      "id": "front",
+      "name": "Front",
+      "position": [0.0, 1.6, -0.6],
+      "rotation_euler": [0.0, 0.0, 0.0]
+    },
+    {
+      "id": "left",
+      "name": "Left side",
+      "position": [-0.6, 1.6, 0.0],
+      "rotation_euler": [0.0, 90.0, 0.0]
+    },
+    {
+      "id": "top",
+      "name": "Top down",
+      "position": [0.0, 2.4, 0.0],
+      "rotation_euler": [90.0, 0.0, 0.0]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Host.Tools.PatientBriefing",
+    "rootNamespace": "Host.Tools.PatientBriefing",
+    "references": [
+        "Host.Patients"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

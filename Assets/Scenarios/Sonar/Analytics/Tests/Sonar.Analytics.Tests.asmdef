@@ -1,0 +1,23 @@
+{
+    "name": "Sonar.Analytics.Tests",
+    "rootNamespace": "Sonar.Analytics.Tests",
+    "references": [
+        "Sonar.Analytics",
+        "Sonar.Scenario"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="project://database/Assets/Tools/PanelToolbar/PanelToolbarPanel.uss" />
+  <ui:VisualElement name="root" class="toolbar">
+    <ui:VisualElement name="buttons" class="toolbar-buttons" />
+  </ui:VisualElement>
+</ui:UXML>

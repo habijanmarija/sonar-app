@@ -1,0 +1,16 @@
+{
+  "v1": {
+    "Meta/QuestTouchPlus_R": {
+      "position_m":  [0.000, -0.080, 0.020],
+      "rotation_quat": [0.0, 0.0, 0.0, 1.0]
+    },
+    "HTC/FocusVision_R": {
+      "position_m":  [0.000, -0.090, 0.022],
+      "rotation_quat": [0.0, 0.0, 0.0, 1.0]
+    },
+    "Editor/Flat_R": {
+      "position_m":  [0.000, 0.000, 0.150],
+      "rotation_quat": [0.0, 0.0, 0.0, 1.0]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Host.Tools.ScrewPlanner",
+    "rootNamespace": "Host.Tools.ScrewPlanner",
+    "references": [
+        "Host.Patients",
+        "Host.Visualization",
+        "Host.Tools.Segmentation",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

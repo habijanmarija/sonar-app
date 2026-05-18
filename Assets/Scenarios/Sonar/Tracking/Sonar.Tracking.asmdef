@@ -1,0 +1,23 @@
+{
+    "name": "Sonar.Tracking",
+    "rootNamespace": "Sonar.Tracking",
+    "references": [
+        "Host.Platform",
+        "Unity.XR.Hands"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.hands",
+            "expression": "1.0.0",
+            "define": "UNITY_XR_HANDS"
+        }
+    ],
+    "noEngineReferences": false
+}

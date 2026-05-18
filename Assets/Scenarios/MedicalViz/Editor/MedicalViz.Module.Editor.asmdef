@@ -1,0 +1,30 @@
+{
+    "name": "MedicalViz.Module.Editor",
+    "rootNamespace": "MedicalViz.Module.Editor",
+    "references": [
+        "MedicalViz.Module",
+        "Host.Tools.PatientSelector",
+        "Host.Tools.PatientBriefing",
+        "Host.Tools.OpacityControl",
+        "Host.Tools.ViewControl",
+        "Host.Tools.AnnotationWidget",
+        "Host.Tools.DicomWidget",
+        "Host.Tools.DicomVolumeControl",
+        "Host.Tools.Segmentation",
+        "Host.Tools.PanelToolbar",
+        "Host.Tools.OrthoViewer",
+        "Host.Tools.ScrewPlanner",
+        "Host.Visualization"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

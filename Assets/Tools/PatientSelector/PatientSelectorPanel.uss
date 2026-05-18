@@ -1,0 +1,44 @@
+.patients-scroll {
+    max-height: 480px;
+    margin: 12px 0;
+}
+
+.patient-row {
+    flex-direction: column;
+    background-color: #1F1F24;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 6px;
+    border-width: 1px;
+    border-color: #333;
+}
+
+.patient-row:hover {
+    background-color: #2D3D55;
+}
+
+.patient-row .patient-id {
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+.patient-row .patient-pseudonym {
+    color: #B0B0B0;
+}
+
+.patient-row .patient-meta {
+    color: #888;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.empty-message {
+    color: #888;
+    -unity-font-style: italic;
+    margin-top: 6px;
+    display: none;
+}
+
+.empty-message.visible {
+    display: flex;
+}
